@@ -1,42 +1,42 @@
-﻿Day
-Saturday
-Saturday
-Thursday
-Wednesday
-Friday
-Monday
-Tuesday
-Friday
-Wednesday
-Saturday
-Sunday
-Monday
-Sunday
-Wednesday
-Tuesday
-Thursday
-Monday
-Tuesday
-Sunday
-Wednesday
-Tuesday
-Friday
-Saturday
-Saturday
-Wednesday
-Friday
-Saturday
-Wednesday
-Tuesday
-Thursday
-Thursday
-Saturday
-Thursday
-Thursday
-Sunday
-Saturday
-Tuesday
-Wednesday
-Friday
-Wednesday
-Saturday
+Day				Expected
+Saturday		Monday	3	5.857142857
+Saturday		Tuesday	6	5.857142857
+Thursday		Wednesday	8	5.857142857
+Wednesday		Thursday	6	5.857142857
+Friday		Friday	5	5.857142857
+Monday		Saturday	9	5.857142857
+Tuesday		Sunday	4	5.857142857
+Friday				
+Wednesday				
+Saturday				
+Sunday				
+Monday				
+Sunday				
+Wednesday				
+Tuesday				
+Thursday				
+Monday				
+Tuesday				
+Sunday				
+Wednesday				
+Tuesday				
+Friday				
+Saturday				
+Saturday				
+Wednesday				
+Friday				
+Saturday				
+Wednesday				
+Tuesday				
+Thursday				
+Thursday				
+Saturday				
+Thursday				
+Thursday				
+Sunday				
+Saturday				
+Tuesday				
+Wednesday				
+Friday				
+Wednesday				
+Saturday				
