@@ -36,3 +36,14 @@ find_hypothesis_testing <-function(matrix) {
   }
   return(test_statistic)
 }
+
+
+n = 5
+for (i in 0:(n-1)){
+  #print(i+1)
+  for (j in (i+1):(n-1)){
+    print(j)
+    for (k in (j+1):(n-1)){
+    }
+  }
+}

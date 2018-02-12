@@ -13,11 +13,9 @@ find_hypothesis_testing <-function(matrix) {
     }
     for (j in 1:lengths(matrix[i])){
       total[[j]] = matrix[[i]][[j]] +total[[j]]
-      #print(total[[j]])
     }
   }
   all_total = sum(unlist(total))
-  #print(all_total)
   expected = list()
   for (i in 1:row){
     buf = list()
@@ -54,15 +52,19 @@ for (i in 2:6){
 }
 
 n = 5
-for (i in 1:n){
-  for (j in i+1:n){
-    for (k in j+1:n){
+for (i in 0:(n-1)){
+  if ((i+1)<=(n-1)){
+  for (j in (i+1):(n-1)){
+    if ((j+1)<=(n-1)){
+    for (k in (j+1):(n-1)){
       matrix = c()
-      matrix = append(matrix,data[i])
-      matrix = append(matrix,data[j])
-      matrix = append(matrix,data[k])
-      find_hypothesis_testing(matrix)
-      print('book ('+ i + ',' + j + ',' +k+')'+':'+find_hypothesis_testing(matrix))
+      matrix = append(matrix,data[i+1])
+      matrix = append(matrix,data[j+1])
+      matrix = append(matrix,data[k+1])
+      hypo = find_hypothesis_testing(matrix)
+      print(sprintf("book %i,%i,%i,%f", i+1, j+1,k+1,hypo))
     }
+    }
+  }
   }
 }
