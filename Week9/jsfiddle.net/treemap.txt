@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['treemap']});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Location', 'Parent', 'Population (size)','Population (color)'],
+          ['Thailand',null,0,0],
+          ['Bangkok and Suburb cities','Thailand', 9146431, 9146431],
+          ['Central','Thailand',   12994347,   12994347],
+          ['North','Thailand',        11670186,        11670186],
+          ['Northeast','Thailand',         21877600,         21877600],
+          ['South','Thailand',       9241521,       9241521],
+					['Bangkok','Bangkok and Suburb cities',5605672,5605672],
+					['Nonthaburi','Bangkok and Suburb cities',	1186486,	1186486],
+					['Pathum Thani','Bangkok and Suburb cities',	1087994,1087994],
+					['Samut Prakan','Bangkok and Suburb cities',	1266279,1266279]
+          ]);
+
+        tree = new google.visualization.TreeMap(document.getElementById('chart_div'));
+
+        tree.draw(data, {
+          minColor: '#f00',
+          midColor: '#ddd',
+          maxColor: '#0d0',
+          headerHeight: 15,
+          fontColor: 'black',
+          showScale: true
+        });
+
+      }
+    </script>
+  </head>
+  <body>
+    <div id="chart_div" style="width: 900px; height: 500px;"></div>
+  </body>
+</html>
